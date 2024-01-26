@@ -1,0 +1,57 @@
+<style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="c70bb4b8-68c1-448b-83b0-3114691c00b4" class="display"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+    <tr style="text-align: right;">
+      <th>RCM</th>
+      <th>ALARO1-SFX</th>
+      <th>COSMO-CLMv6</th>
+      <th>MARv3.14</th>
+    </tr>
+    <tr>
+      <th>driving_GCM</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+<script type="module">
+    // Import jquery and DataTable
+    import 'https://code.jquery.com/jquery-3.6.0.min.js';
+    import dt from 'https://cdn.datatables.net/1.12.1/js/jquery.dataTables.mjs';
+    dt($);
+
+    // Define the table data
+    const data = [["CMCC-CM2-SR5", "", "", "<span style=\"color: green\">SSP1-2.6</span>, <span style=\"color: green\">SSP2-4.5</span>, <span style=\"color: green\">SSP3-7.0</span>, <span style=\"color: green\">SSP5-8.5</span>, <span style=\"color: green\">hist</span>"], ["CNRM-ESM2-1", "<span style=\"color: blue\">SSP2-4.5</span>, <span style=\"color: blue\">SSP5-8.5</span>, <span style=\"color: blue\">hist</span>", "", ""], ["EC-Earth3-Veg", "<span style=\"color: blue\">SSP2-4.5</span>, <span style=\"color: blue\">SSP5-8.5</span>, <span style=\"color: blue\">hist</span>", "<span style=\"color: blue\">SSP2-4.5</span>, <span style=\"color: blue\">SSP5-8.5</span>, <span style=\"color: blue\">hist</span>", "<span style=\"color: green\">SSP1-2.6</span>, <span style=\"color: green\">SSP2-4.5</span>, <span style=\"color: green\">SSP3-7.0</span>, <span style=\"color: green\">SSP5-8.5</span>, <span style=\"color: green\">hist</span>"], ["ERA-5", "<span style=\"color: blue\">evaluation</span>", "<span style=\"color: blue\">evaluation</span>", "<span style=\"color: green\">evaluation</span>"], ["MIROC6", "", "<span style=\"color: blue\">SSP2-4.5</span>, <span style=\"color: blue\">SSP5-8.5</span>, <span style=\"color: blue\">hist</span>", "<span style=\"color: green\">SSP1-2.6</span>, <span style=\"color: green\">SSP2-4.5</span>, <span style=\"color: green\">SSP3-7.0</span>, <span style=\"color: green\">SSP5-8.5</span>, <span style=\"color: green\">hist</span>"], ["MPI-ESM1-2-HR", "", "", "<span style=\"color: green\">SSP1-2.6</span>, <span style=\"color: green\">SSP2-4.5</span>, <span style=\"color: green\">SSP3-7.0</span>, <span style=\"color: green\">SSP5-8.5</span>, <span style=\"color: green\">hist</span>"], ["NorESM2-MM", "", "", "<span style=\"color: green\">SSP1-2.6</span>, <span style=\"color: green\">SSP2-4.5</span>, <span style=\"color: green\">SSP3-7.0</span>, <span style=\"color: green\">SSP5-8.5</span>, <span style=\"color: green\">hist</span>"], ["TBD", "<span style=\"color: blue\">SSP2-4.5</span>, <span style=\"color: blue\">SSP5-8.5</span>, <span style=\"color: blue\">hist</span>", "", ""]];
+
+    // Define the dt_args
+    let dt_args = {"dom": "t", "order": []};
+    dt_args["data"] = data;
+
+    $(document).ready(function () {
+        
+        $('#c70bb4b8-68c1-448b-83b0-3114691c00b4').DataTable(dt_args);
+    });
+</script>
+</div>

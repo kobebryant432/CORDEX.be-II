@@ -1,0 +1,55 @@
+<style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+<table id="84f86bfa-77d0-41b7-a8a0-857cbbf2f39f" class="display"style="table-layout:auto;width:auto;margin:auto;caption-side:bottom"><thead>
+    <tr style="text-align: right;">
+      <th>RCM</th>
+      <th>ALARO1-SFX</th>
+      <th>COSMO-CLMv6</th>
+    </tr>
+    <tr>
+      <th>driving_GCM</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+<script type="module">
+    // Import jquery and DataTable
+    import 'https://code.jquery.com/jquery-3.6.0.min.js';
+    import dt from 'https://cdn.datatables.net/1.12.1/js/jquery.dataTables.mjs';
+    dt($);
+
+    // Define the table data
+    const data = [["CNRM-ESM2-1", "<u><span style=\"color: blue\">SSP2-4.5</span></u>, <u><span style=\"color: blue\">SSP5-8.5</span></u>, <u><span style=\"color: blue\">hist</span></u>", ""], ["EC-Earth3-Veg", "<u><span style=\"color: blue\">SSP2-4.5</span></u>, <u><span style=\"color: blue\">SSP5-8.5</span></u>, <u><span style=\"color: blue\">hist</span></u>", "<span style=\"color: blue\">SSP2-4.5</span>, <span style=\"color: blue\">SSP5-8.5</span>, <span style=\"color: blue\">hist</span>"], ["ERA-5", "<u><span style=\"color: blue\">evaluation</span></u>", "<span style=\"color: blue\">evaluation</span>"], ["MIROC6", "", "<span style=\"color: blue\">SSP2-4.5</span>, <span style=\"color: blue\">SSP5-8.5</span>, <span style=\"color: blue\">hist</span>"], ["TBD", "<span style=\"color: blue\">SSP2-4.5</span>, <span style=\"color: blue\">SSP5-8.5</span>, <span style=\"color: blue\">hist</span>", ""]];
+
+    // Define the dt_args
+    let dt_args = {"dom": "t", "order": []};
+    dt_args["data"] = data;
+
+    $(document).ready(function () {
+        
+        $('#84f86bfa-77d0-41b7-a8a0-857cbbf2f39f').DataTable(dt_args);
+    });
+</script>
+</div>
