@@ -1,6 +1,6 @@
 #Read in the simulation status file as a pandas dataframe
 import pandas as pd
-from itables import show, to_html_datatable
+from itables import to_html_datatable
 
 df = pd.read_csv('Simulation_Status/input/sim_status.csv')
 
