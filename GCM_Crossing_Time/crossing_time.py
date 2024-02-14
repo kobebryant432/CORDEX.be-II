@@ -35,21 +35,13 @@ df_merged = df.merge(df_selected_GCMs[['driving_GCM','experiment','experiment_fo
 #Clean up for plotting
 df_merged['Global Warming Level'] = df_merged['threshold'].apply(lambda x: f'+{x}°C GWL')
 df_merged['GCM SSP'] = df_merged['GCM'] + ' ' + df_merged['experiment_formatted']
-
-## PLOT THE DATA ##
-
-
-
-
 df_merged['crossing_time_start'] = df_merged['crossing_time'] - 10
 df_merged['crossing_time_end'] = df_merged['crossing_time'] + 9
-
-#drop all rows with NaN crossing time
 df_merged = df_merged.dropna(subset=['crossing_time'])
 df_merged['crossing_time'] = df_merged['crossing_time'].astype(int)
 df_merged = df_merged.sort_values(by=['GCM','experiment_formatted'])
 
-#Make a plot
+## PLOT THE DATA ##
 
 fig, ax = plt.subplots(figsize=(10,10))
 
