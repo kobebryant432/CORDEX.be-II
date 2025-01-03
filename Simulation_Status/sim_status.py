@@ -19,6 +19,8 @@ for res,df in zip(["12km","4km"],[df_1, df_2]):
     df_mat = df.sort_values(by=['experiment']).pivot_table(index=['driving_GCM'], columns='RCM', values='experiment_formatted', aggfunc=concat_experiments)
     df_mat = df_mat.reindex(sorted(df_mat.columns), axis=1).fillna('')
 
+    #Create a
+
     with open(f'Simulation_Status/output/sim_status_{res}.html', 'w') as f:
         f.write(to_html_datatable(df_mat, dom="t", classes="display"))
 
