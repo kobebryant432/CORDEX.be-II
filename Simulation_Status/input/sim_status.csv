@@ -1,5 +1,5 @@
 institute,domain,resolution,RCM,driving_GCM,ensemble_member,GWL,experiment,period_start,period_end,status,eu_cordex
-RMI,Europe,12km,ALARO1-SFX,ERA-5,-,hist,evaluation,1950,2020,planned,TRUE
+RMI,Europe,12km,ALARO1-SFX,ERA-5,-,hist,evaluation,1950,2020,running,TRUE
 RMI,Belgium,4km,ALARO1-SFX,ERA-5,-,hist,evaluation,1995,2014,planned,FALSE
 RMI,Europe,12km,ALARO1-SFX,CNRM-ESM2-1,r1i1p1f2,hist,hist,1995,2014,planned,TRUE
 RMI,Belgium,4km,ALARO1-SFX,CNRM-ESM2-1,r1i1p1f2,hist,hist,1995,2014,planned,FALSE
@@ -58,7 +58,7 @@ U-Liege,Belgium,4km,MARv3.14,IPSL-CM6A-LR,r1i1p1f1,2&3,SSP1-2.6,?,?,complete,FAL
 U-Liege,Belgium,4km,MARv3.14,IPSL-CM6A-LR,r1i1p1f1,2&3,SSP2-4.5,?,?,complete,FALSE
 U-Liege,Belgium,4km,MARv3.14,IPSL-CM6A-LR,r1i1p1f1,2&3,SSP3-7.0,?,?,complete,FALSE
 U-Liege,Belgium,4km,MARv3.14,IPSL-CM6A-LR,r1i1p1f1,2&3,SSP5-8.5,?,?,complete,FALSE
-KU Leuven,Europe,12km,COSMO-CLMv6,ERA-5,-,hist,evaluation,1979,2023,running,FALSE
+KU Leuven,Europe,12km,COSMO-CLMv6,ERA-5,-,hist,evaluation,1979,2023,complete,FALSE
 KU Leuven,Belgium,4km,COSMO-CLMv6,ERA-5,-,hist,evaluation,1982,2023,running,FALSE
 KU Leuven,Europe,12km,COSMO-CLMv6,EC-Earth3-Veg,r1i1p1f1,hist,hist,1995,2014,planned,FALSE
 KU Leuven,Belgium,4km,COSMO-CLMv6,EC-Earth3-Veg,r1i1p1f1,hist,hist,1995,2014,planned,FALSE
