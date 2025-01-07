@@ -1,6 +1,6 @@
 institute,domain,resolution,RCM,driving_GCM,ensemble_member,GWL,experiment,period_start,period_end,status,eu_cordex
 RMI,Europe,12km,ALARO1-SFX,ERA-5,-,hist,evaluation,1950,2020,running,TRUE
-RMI,Belgium,4km,ALARO1-SFX,ERA-5,-,hist,evaluation,1995,2014,planned,FALSE
+RMI,Belgium,4km,ALARO1-SFX,ERA-5,-,hist,evaluation,1995,2014,running,FALSE
 RMI,Europe,12km,ALARO1-SFX,CNRM-ESM2-1,r1i1p1f2,hist,hist,1995,2014,planned,TRUE
 RMI,Belgium,4km,ALARO1-SFX,CNRM-ESM2-1,r1i1p1f2,hist,hist,1995,2014,planned,FALSE
 RMI,Europe,12km,ALARO1-SFX,CNRM-ESM2-1,r1i1p1f2,2&3,SSP5-8.5,2014,2100,planned,TRUE
